@@ -1,0 +1,20 @@
+@keyframes twinkle {
+    0%, 100% { opacity: 0.2; }
+    50% { opacity: 1; }
+}
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+.star {
+    animation: twinkle 3s infinite;
+}
+.spaceship {
+    animation: float 6s infinite ease-in-out;
+}
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    opacity: 0;
+}
